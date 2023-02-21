@@ -42,6 +42,21 @@ console.log(NaN == NaN) //false
 console.log("NaN" == NaN) //false 
 
 let obj= {x:10 , valueOf(){ return 100}}
-console.log(99 == obj)
-console.log(100 == obj)
+console.log(99 == obj)  // false 
+console.log(100 == obj) // true
 
+let bool = true;
+console.log(bool=='Pankaj');
+
+
+
+
+// ToString Abstract operation 
+// 1) undefined ->"undefined"
+// 2) null -> "null"
+// 3) Boolean for true it will be "true" and ||rly for false it willl be "false"
+// 4) Number to NumberTotring(arg)
+// 5) String return string
+// 6) Symbol return TypeError
+// 7) Object apply this ToPrimitive(arg) preferred-type will be String
+//    whatever be the result then ToString(res)
