@@ -35,3 +35,13 @@ console.log(undefined == false) // no rule satisfied so it will return false
 
 console.log(97 == 'a') //Number  and String => ToNumber('a') =>NaN then type os both operands is    Number so now checking via Equality operator id any operand is NaN then out out is false
 //false
+
+
+console.log(0=== -0) // true
+console.log(NaN == NaN) //false
+console.log("NaN" == NaN) //false 
+
+let obj= {x:10 , valueOf(){ return 100}}
+console.log(99 == obj)
+console.log(100 == obj)
+
