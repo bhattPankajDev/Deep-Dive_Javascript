@@ -24,3 +24,43 @@ console.log(-3 < 3)//true
 /*
     Question ->write a custom function that can give us sign of a number properly ? expected -> -1, 1
 */
+function getSign(inp){
+    if(typeof(inp)!="number"){
+        console.log("Type is not number :) Retry")
+        return;
+    }
+    if(Number.isNaN(inp)){
+        console.log("NaN ! Try again")
+    }
+    val = Math.abs(inp)
+    
+    if(val === 0){
+//need to check whether -ve or +ve 
+      if(Object.is(inp,0)){
+        console.log("Inp is +ve +1")
+      }
+      else{
+        console.log("Inp is -ve -1")
+      }
+    }
+    else{
+         if(inp>0){
+            console.log("Inp is +ve +1")
+         }
+         else{
+            console.log("Inp is -ve -1")
+         }
+    }
+}
+
+getSign(-30) //-ve
+getSign(-10) //-1
+getSign(60)  //+ve
+getSign(-0)  //-ve
+getSign(0)   //+ve
+getSign(-1)  //-ve
+getSign(Infinity)  //+ve
+getSign("Pankaj") //NaN Ty again
+getSign(200) //+ve
+
+

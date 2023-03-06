@@ -28,4 +28,8 @@ console.log(4 && 10);
 console.log(5 || 12);
 console.log((3>10) &&  (5<10));   
 
-// 13,7,30,3.3333,1,1000,Value of X is 12,12,144,false,10,5,false 
+//Bitwise operator
+console.log(10 & 5) //here bit by bit operations take place
+console.log(10 | 7) //same logic 
+
+// 13,7,30,3.3333,1,1000,Value of X is 12,12,144,false,10,5,false,0,15

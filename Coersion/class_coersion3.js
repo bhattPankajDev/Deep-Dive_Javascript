@@ -4,10 +4,10 @@
  
 // !Not Operator uses  ToBoolean(x) as the expression is !x then it startes ecaluating with the help of Not Op
 
-console.log(!20)
-console.log(!'Check this')
-console.log(!NaN)
-console.log(!"Pankaj")
+console.log(!20) //!ToBoolean(20)
+console.log(!'Check this')   //!ToBoolean('Check this')
+console.log(!NaN)  //!ToBoolean(NaN)
+console.log(!"Pankaj")  //!ToBoolean('Pankaj')
 
 
 //== vs ===  (Both of them checks type first then do rest process)
@@ -46,7 +46,7 @@ console.log(99 == obj)  // false
 console.log(100 == obj) // true
 
 let bool = true;
-console.log(bool=='Pankaj');
+console.log(bool=='Pankaj'); //false
 
 
 

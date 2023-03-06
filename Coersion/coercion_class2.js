@@ -16,12 +16,13 @@
 //discussion on valueOf and toString
 
 let obj = {}
-console.log(obj.toString())
-console.log(obj.valueOf())
+console.log(obj.toString()) //[object Object]
+console.log(typeof(obj.toString())) //string
+console.log(obj.valueOf())  //{}
 
 obj={ x : 30}
-console.log(obj.toString())
-console.log(obj.valueOf())  
+console.log(obj.toString()) // [object Object]
+console.log(obj.valueOf())  // {x : 30} 
 // we can rewrite the function toString() and valueOf() ACT our will 
 
 
@@ -34,7 +35,7 @@ console.log(10 - object);   //here - operator will use ToNumber abstract operato
 // Methods valueOf() then toString() will be applied on Object if any of them returns non-Object type then stop otherwise TypeError
 
 // Note->>
-// valueOf() return an Object to which it is called as it is 
+// valueOf() return an Object (same object) to which it is called as it is 
 // toString() return a string "[object Object]" (this is a string) but wehen we have a string object then returns it as a primtive value
 
 
@@ -71,25 +72,25 @@ let object5 = {
         return {}
     } 
 }
-// console.log(100 - object5);  this will throw erro
+// console.log(100 - object5);  this will throw error both the functions in OrdinaryToPtimitive toString,valueOf doesn't returned non-object type value
 
 console.log('Now /"+/" OPERATOR examples');
 
 // + operator
 let res1 = 10 + object1;
-console.log(res1,typeof res1);
+console.log(res1,typeof res1); //10[object Object] string
 
 let res2 = 10 + object2
-console.log(res2,typeof res2);
+console.log(res2,typeof res2); //109 number
 
 let res3 = 10 + object3
-console.log(res3,typeof res3);
+console.log(res3,typeof res3); //10changed return type string
 
 let res4 = 10 + object4
-console.log(res4,typeof res4);
+console.log(res4,typeof res4); //1015 string
 
-// console.log(object4 + object5)     this will throw error
+// console.log(object4 + object5)     this will throw error //because object5 will not return a priitive value in the end
 let res5 = "100" + 10
-console.log(res5,typeof res5);
+console.log(res5,typeof res5); //10010 string
 
-//console.log(object+ object5);      this will throw error
+//console.log(object+ object5);      this will throw error //because object5 will not return a priitive value in the end

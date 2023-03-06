@@ -26,7 +26,7 @@ console.log("10" + {X: 10,toString(){ return "hola";}, valueOf(){return 5;}})
 // corner cases around coercion
 
 // ToString
-console.log("" + 0)  //0->"0"
+console.log("" + 0,typeof("" + 0))  //0->"0 string"
 
 console.log(""+(-0)) //(-0)->"0"
 
@@ -72,7 +72,7 @@ console.log([6,2] - 1) //NaN
 // As JS is basically a loosely-typed language so using === gives developer a shield as per se but if we want a shield then why to use JS 
 // so we should be clear about the usage of equality operator okay 
 
-// like console.log(typeof(100)=='Number') // then why to use === here we know about this
+// like console.log(typeof(100)=='number') // then why to use === here we know about this
 
 // there is also a catch that === will be faster than == as less operatns in === but there is tradeoffs 
 // finally then would be decided as the situatn rises

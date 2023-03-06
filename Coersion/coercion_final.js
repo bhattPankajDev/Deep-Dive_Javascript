@@ -1,11 +1,11 @@
 // coercion examples
-
+//where it is used unknowingly
 let obj ={x:200000}
 let num=20
 console.log(`This is my car no ${num}`)   //During printing we manyatimes uses coercion also  HERE num 
 //  will be converted ToString (abstract operatn)  
 //output->This is my car no 20
-console.log(`I am right now scored ${obj}`)  //here also obj was conveted to Primitive preferred type STRING
+console.log(`I am right now scored ${obj}`)  //here also obj w as conveted to Primitive preferred type STRING
 //output -> I am right now scored [objectObject]
 
 console.log(1 < 2 < 3) //1 < 2 executes first then this result < 3 so effectively=>

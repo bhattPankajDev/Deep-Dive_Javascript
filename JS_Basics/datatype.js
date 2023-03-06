@@ -4,6 +4,7 @@ let firstname = "Pankaj";
 let lastname = `Bhatt`;
 let middle = 'Chandra Shekhar';
 console.log("Name is -> %s , First name is %s , Last name is %s and Middle name is -> %s ",nameUser,firstname,lastname,middle);
+console.log(`Name is -> ${nameUser} , First name is ${lastname} , Last name is %s and Middle name is -> ${middle}`);
 
 var isGood = true;
 console.log("Light is there ? -> ",isGood)
@@ -29,7 +30,7 @@ let imp_inp = undefined   //something not defined now may be defined later for t
 console.log(10/null);      //Infinity
 
 //Nan //Not a number is a type of number 
-//used when we used to return something which is not a number
+//used when we used to return something which is not a number/or anything that can't be a number something that which can't be a number
 
 firstInp = NaN;
 secInp = NaN;
