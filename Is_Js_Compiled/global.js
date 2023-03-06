@@ -6,3 +6,5 @@ function demo(){
 }
 console.log(name)
 // here name is global variable
+
+
