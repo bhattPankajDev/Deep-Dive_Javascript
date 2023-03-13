@@ -23,3 +23,17 @@
 //       Block Scope
 //how to identify diff scopes 
 // Before some discussion on let,var & const
+
+
+// sort of scope question try??
+// var fun = "123";
+// function fun(){ //while parsing phrase we saw it but nothinh will happenn it will not rewrite it as we are not using functn expression
+//    return "fun2";
+// }
+// console.log(fun)   //output is 123
+
+// But if we try to call the functn is fails 
+
+// if we have this at line no 33 then  console.log(fun())   //error ->logical easy
+//fun will belong to global scope there is only single assignment 
+ 
